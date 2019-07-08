@@ -1,8 +1,13 @@
 {
   "name": "pop-weather",
   "description": "A Vue.js project",
+  "keywords":["pop","vue","weather","Plugin"],
   "version": "1.0.0",
-  "author": "xiaolong.pang@vip.163.com",
+  "author": "https://github.com/pangxiaolong/pop-weather.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pangxiaolong/pop-weather.git"
+  },
   "license": "MIT",
   "private": true,
   "scripts": {
