@@ -32,8 +32,9 @@
         data() {
             return {
                 ip: '',
+                key: 'dd8a9404ede1e276bd36e060a6f9fc5c',
+                adcode: null,
                 visible: false,
-                token: "03zmZWWUyxmOM4JD",
                 realResult: {},
                 skycon: null, //主要天气现象
                 skyconList: [{
@@ -82,7 +83,7 @@
             };
         },
         created() {
-            
+            this.getIp()
         },
         methods: {
             popoverShow() {
@@ -90,6 +91,31 @@
             },
             popoverHidden() {
                 this.visible = false;
+            },
+            getIp() {
+                const that = this;
+                axios.get('https://restapi.amap.com/v3/ip?key=' + that.key)
+                    .then(res => {
+                        if (res.data.status === '1') {
+                            that.adcode = res.data.adcode
+                            that.getWeather(res.data.adcode)
+                        } else {
+                            alert(res.data.info)
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    });
+            },
+            getWeather(city) {
+                const that = this;
+                that.$jsonp(`https://www.tianqiapi.com/api?version=v6&cityid=${city}`)
+                    .then(res => {
+                        console.log('res',res);
+                    })
+                    .catch(error => {
+                        console.log('error',error);
+                    });
             },
             findSkycon(code) {
                 let title = {};
@@ -108,7 +134,7 @@
 
         .pop-avatar-info {
             display: flex;
-            
+
 
             .pop-avatar-now {
                 display: flex;
@@ -135,6 +161,7 @@
                 height: 50px;
                 width: 60px;
                 text-align: center;
+
                 .today-temperature {
                     font-size: 10px;
                 }
