@@ -1,7 +1,12 @@
 {
   "name": "pop-weather",
   "description": "A Vue.js project",
-  "keywords":["pop","vue","weather","Plugin"],
+  "keywords": [
+    "pop",
+    "vue",
+    "weather",
+    "Plugin"
+  ],
   "version": "1.0.0",
   "author": "https://github.com/pangxiaolong/pop-weather.git",
   "repository": {
@@ -15,7 +20,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-jsonp": "^0.1.8"
   },
   "browserslist": [
     "> 1%",
