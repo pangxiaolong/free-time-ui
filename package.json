@@ -7,14 +7,15 @@
     "weather",
     "Plugin"
   ],
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "https://github.com/pangxiaolong/pop-weather.git",
   "repository": {
     "type": "git",
     "url": "https://github.com/pangxiaolong/pop-weather.git"
   },
   "license": "MIT",
-  "private": true,
+  "main": "dist/pop-weather.js",
+  "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

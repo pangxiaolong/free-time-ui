@@ -4,7 +4,7 @@
       <div class="pop-avatar-info">
         <div class="pop-avatar-now">
           <div class="today-skycon">
-            <img src="../../assets/sunny.png" :alt="skyconList.wea" />
+            <img v-if="weatherImg" :src="weatherImg" :alt="skyconList.wea" />
           </div>
           <div class="now-temperature">{{skyconList.tem}}</div>
         </div>
@@ -34,6 +34,7 @@
     data() {
       return {
         visible: false,
+        weatherImg: null,
         skyconList: null,
         night: false,
         weatherList: null,
@@ -57,6 +58,7 @@
           })
           .then(res => {
             that.skyconList = res.data[0]
+            that.weatherImg = require('../../assets/'+res.data[0].wea_img + '.png')
             let hour = new Date().getHours()
             that.night = hour > 17 ? true : false
             let {
@@ -113,7 +115,10 @@
         .today-skycon {
           height: 30px;
           width: 40px;
-          // background: #e2e2e2;
+          img{
+            width: 30px;
+            height: 30px;
+          }
         }
 
         .now-temperature {
