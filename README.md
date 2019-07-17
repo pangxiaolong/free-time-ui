@@ -28,7 +28,7 @@ view.vue
 <avatar-weather />
 ```
 ## 预览
-###AvatarWeather
+###  AvatarWeather
 ![在这里插入图片描述](https://s2.ax1x.com/2019/07/17/ZLADoV.gif)
 
 ## 有问题

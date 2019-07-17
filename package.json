@@ -8,10 +8,10 @@
     "Plugin"
   ],
   "version": "1.0.5",
-  "author": "https://github.com/pangxiaolong/pop-weather.git",
+  "author": "https://github.com/pangxiaolong/free-time-ui.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pangxiaolong/pop-weather.git"
+    "url": "https://github.com/pangxiaolong/free-time-ui.git"
   },
   "license": "MIT",
   "main": "dist/free-time-ui.js",
