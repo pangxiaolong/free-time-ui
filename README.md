@@ -1,18 +1,36 @@
-# pop-weather
+## 介绍
 
-> A Vue.js project
+开发一点自己要到的vue组件，想到什么就写一个，不定时优化更新和增加新的玩意。
+- AvatarWeather天气组件（带pop列表）
 
-## Build Setup
+## 安装
 
-``` bash
-# install dependencies
-npm install
+###  通过 npm 安装 
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
+```bash
+# npm
+npm i free-time-ui
+
+npm i vue-jsonp
 ```
+###  使用方式
+main.js
+```javascript
+import FreeTimeUI from 'free-time-ui'
+import VueJsonp from 'vue-jsonp'
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Vue.use(FreeTimeUI)
+Vue.use(VueJsonp)
+```
+view.vue
+```html
+<avatar-weather />
+```
+## 预览
+###AvatarWeather
+![在这里插入图片描述](https://s2.ax1x.com/2019/07/17/ZLADoV.gif)
+
+## 有问题
+
+如果你有好的意见或建议，欢迎提 [issue] 或 联系我[xiaolong.pang@vip.163.com]

@@ -1,12 +1,14 @@
 /*
- * @Author: xlong 
- * @Date: 2019-07-01 10:50:56 
- * @Last Modified by:   xlong 
- * @Last Modified time: 2019-07-01 10:50:56 
+ * @Author: xlong
+ * @Date: 2019-07-01 10:50:56
+ * @Last Modified by:   xlong
+ * @Last Modified time: 2019-07-01 10:50:56
  */
 
-import PopWeather from './avatar';
+import AvatarWeather from './avatar';
 
-PopWeather.install = Vue => Vue.component(PopWeather.name, PopWeather);
+AvatarWeather.install = function (Vue) {
+  Vue.component(AvatarWeather.name, AvatarWeather)
+};
 
-export default PopWeather;
+export default AvatarWeather;

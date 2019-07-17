@@ -1,20 +1,20 @@
 {
-  "name": "pop-weather",
-  "description": "A Vue.js project",
+  "name": "free-time-ui",
+  "description": "A Vue.js Component UI",
   "keywords": [
     "pop",
     "vue",
     "weather",
     "Plugin"
   ],
-  "version": "1.0.2",
+  "version": "1.0.5",
   "author": "https://github.com/pangxiaolong/pop-weather.git",
   "repository": {
     "type": "git",
     "url": "https://github.com/pangxiaolong/pop-weather.git"
   },
   "license": "MIT",
-  "main": "dist/pop-weather.js",
+  "main": "dist/free-time-ui.js",
   "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

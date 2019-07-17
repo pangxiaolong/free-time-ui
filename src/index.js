@@ -1,6 +1,6 @@
-import PopWeather from './packages/weather/index.js';
+import AvatarWeather from './packages/weather/index.js';
 const components = [
-  PopWeather
+  AvatarWeather
 ]
 const install = function (Vue, opts = {}) {
   components.map(component => {
@@ -12,5 +12,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 export default {
   install,
-  PopWeather
+  AvatarWeather
 }
