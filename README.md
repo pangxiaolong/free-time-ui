@@ -1,4 +1,4 @@
-## 介绍Introduction
+## 介绍
 
 开发一点自己要到的vue组件，想到什么就写一个，不定时优化更新和增加新的玩意。
 
@@ -17,7 +17,7 @@ npm i free-time-ui
 
 npm i vue-jsonp
 ```
-###  使用方式Import
+###  使用方式
 main.js
 ```javascript
 import FreeTimeUI from 'free-time-ui'
