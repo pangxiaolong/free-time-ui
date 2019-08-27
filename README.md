@@ -2,10 +2,9 @@
 
 开发一点自己要到的vue组件，想到什么就写一个，不定时优化更新和增加新的玩意。
 
-Develop a vue component that you want to go to, write one when you think of it, update updates and add new things from time to time.
 
 - AvatarWeather天气组件（带pop列表）
-  Weather component (with pop list)
+
 ## 安装Install
 
 ###  通过 npm 安装 
